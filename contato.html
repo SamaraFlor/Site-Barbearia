@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contataos Barbearia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="caixa">
+    <h1><img src="logo.png" alt=""Logo da Barbearia></h1>
+ <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="style.css">Produto</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+        </ul>
+ </nav>
+</div>
+</header>
+
+<main>
+<form>
+   <label for="nomesobrenome">Nome e Sobrenome</label> 
+    <input type="text" id="nomesobrenome" class="input-padrao" required> 
+
+    <label for="email">Email</label>
+<input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+
+    <label for="telefone"> Telefone </label>
+    <input type="text" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx - xxxxx">
+  
+    <label for="mensagem">Mensagem</label>
+    <textarea  cols="30" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+    <fieldset>
+        <legend>Como prefere o nosso Contato</legend>
+        <label for="radio-email"><input type="radio" name= "contato" value="email" id="radio-email">Email</label>
+        <label for="radio-telefone"> <input type="radio"  name= "contato"  value="telefone" id="radio-telefone">Telefone</label>
+        <label for="radio-whatsapp"> <input type="radio" name= "contato"  value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Qual horario prefere ser atendido?</legend>
+            <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+            </select>
+    </fieldset>
+
+
+    <label class="checbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+    
+    <input type="submit" value="enviar formulario" class="enviar">
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horarios</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Segunda Feira</td>
+            <td> 8H ás 20H </td>
+        </tr>
+        <tr>
+            <td>Quarta Feira</td>
+            <td>8H ás 20H</td>
+        </tr>
+        <tr>
+            <td>Sexta Feira</td>
+            <td>8H ás 20H</td>
+        </tr>
+    </tbody>
+</table>
+</main>
+
+
+<footer>
+    <img src="logo-branco.png " alt="Logo de Rodapé">
+    <p class="copyrigth">&copy; Copyright Barbearia Alura- 2019 </p>
+</footer>
+</body>
+
+</html>
